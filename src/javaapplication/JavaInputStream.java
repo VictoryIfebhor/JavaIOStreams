@@ -6,12 +6,8 @@
 package javaapplication;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author RND SOFTWARE
@@ -43,6 +39,7 @@ public class JavaInputStream {
         /* The input stream has been used to read the content of the file and store in the array successfully.
          * The array can then be used to create a string whose value will be the content of the file.
          */
+        
             //step1
             try ( InputStream inputStream = new FileInputStream("files/hello world.txt")) {
                 
@@ -57,8 +54,8 @@ public class JavaInputStream {
                 String content = new String(byteArray);
                 System.out.println(content);
             }
-         catch (IOException ex) {
-            Logger.getLogger(JavaInputStream.class.getName()).log(Level.SEVERE, null, ex);
+         catch (IOException e) {
+            System.out.println(e.getMessage());
         }
         
     }
