@@ -43,5 +43,8 @@ public class JavaInputStream {
          */
         String content = new String(byteArray);
         System.out.println(content);
+        
+        // close the input stream
+        inputStream.close();
     }
 }
