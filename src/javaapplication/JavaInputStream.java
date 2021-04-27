@@ -28,7 +28,7 @@ public class JavaInputStream {
         // step2
         /* create a byte array that will store the bytes read from the input stream
         * to instantiate a new byte array, the size of the array is required.
-        * so I an estimate of the number of bytes that can be read from the input stream using the 'available' method
+        * so I got an estimate of the number of bytes that can be read from the input stream using the 'available' method
         * then I used the estimate gotten as the size of the array.
         */
         
